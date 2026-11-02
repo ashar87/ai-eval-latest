@@ -1,35 +1,27 @@
-# Lab 1, Ascend Analytics Coverage Matrix
+# Module 5 · Coverage Matrix · AI Voice Agent
 
-> Repo file `ai-evals/05-scale/lab-1-coverage-matrix.md`. Feeds the **Coverage / scale** slide of the final pitch deck (Module 6).
->
-> Fill this with the **Coverage Matrix Tool**, then **Copy markdown** and paste it over this file. The headings below mirror the tool's output exactly. **Force ≥2 ❌ gaps** — an all-green matrix isn't real.
+## Coverage Row
 
-**Product:** _…_
-
-## Coverage row
-
-| Product | Hallucination | Bias | Latency | Toxicity | Drift Monitoring |
+| Product | Hallucination Rate | Fairness | Latency | UX Trust | Robustness |
 |---|---|---|---|---|---|
-| _…_ | _✅ / ⚠️ / ❌_ | _✅ / ⚠️ / ❌_ | _✅ / ⚠️ / ❌_ | _✅ / ⚠️ / ❌_ | _✅ / ⚠️ / ❌_ |
+| AI Voice Agent | ✅ Covered | ❌ Gap | ❌ Gap | ✅ Covered | ✅ Covered |
 
-## Method + Ground Truth (two ✅/⚠️ cells)
+## What Runs Today
 
-### _Risk name 1_
-- **Method:** _how you evaluate it_
-- **Ground truth:** _what you grade against_
+- An eval gate tests its answers to 300 billing questions before every release.
+- A supervisor listens to 10 random calls a week for tone.
+- A drift monitor alerts when callers start asking about things the agent wasn’t tested on.
 
-### _Risk name 2_
-- **Method:** _how you evaluate it_
-- **Ground truth:** _what you grade against_
+## Accepted Gap
 
-## Strategic acceptance
+**Latency.** We accept this gap because we want to focus on accuracy than latency in the beginning.
 
-**Accepted gap:** _which ❌ you're accepting_
+We’ll look again: If latency goes about 1s to respond to a question, we'll look into this again.
 
-> _Why it's an acceptable risk right now + the kill criterion / date that would change the call._
+## Critical Gap
 
-## Critical mitigation
+We’ve flagged Fairness as the most critical gap for the AI Voice Agent because we want to provide accurate billing answers for all customer types. To close it, we'll add an eval gate which tests for fairness.
 
-- **Critical gap:** _the ❌ you cannot accept_
-- **Why critical:** _…_
-- **Mitigation plan:** _concrete plan with a date/owner — not "we'll add it later"._
+## After the Pressure Test
+
+I changed to accept the latency gap and focus on robustness, since we don't want users to be disadvantaged in billing queries by region. So the gap to focus on should be robustness, not latency, as accuracy is more important than speed.
