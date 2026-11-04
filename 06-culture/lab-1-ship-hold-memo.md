@@ -1,47 +1,21 @@
-# Ship/Hold Memo · Ascend IQ
+# Ship-or-Hold Memo · Ascend IQ
 
-> Repo file `ai-evals/06-culture/lab-1-ship-hold-memo.md`. A Pyramid-Principle executive memo: the recommendation comes **first**.
->
-> Fill this with the **Ship/Hold Memo Builder**, then **Copy markdown** and paste it over this file. The headings below mirror the tool's output exactly.
-
-> **Decision:** 🚀 SHIP _(or 🛑 HOLD)_
-
-**To:** _[CPO] · cc Eng Lead · Trust & Safety_
-**From:** _[Your Name] · AI Evals Cohort · [Date]_
+> **Decision:** HOLD
 
 ## The Answer
 
-_First sentence = the recommendation and the business reason. Do not bury it._
+Hold the Ascend IQ launch to the top 50 enterprise accounts as half of the answers we audited contain fabricated or unsupported claims. Putting that in front of clients who pay $50K+ a year for *verified* intelligence would hurt Q4 retention more than a few weeks' delay will. The eval gates that would let us ship safely are built and working; the product doesn't pass them yet.
 
 ## The Arguments
 
-### 1. _Argument pillar title_
+### 1. Hallucination rate too high
 
-_…_
+Evidence: 10/20 failed as hallucination
 
-### 2. _Argument pillar title_
+### 2. Hard gate fails
 
-_…_
-
-### 3. _Argument pillar title_
-
-_…_
-
-## Evidence · Trust Metrics
-
-```
-- Metric: result (Gate: bar) PASS/FAIL · Source
-- … cite exact numbers from M2–M5 (hallucination rate vs gate, factual grounding %, bias coverage %, p95 latency)
-```
-
-## Business Risk
-
-_Quantified SHIP-path vs HOLD-path risk (revenue, churn, competitive window)._
+Evidence: The hard gate about pricing issue fails due to the detection of wrong pricing issue,
 
 ## Next Step · Decision Needed
 
-_A specific decision request with a deadline — e.g. "Approve the Hold rollback by Friday to keep the Q3 launch window."_
-
-## Reflection
-
-_What defining "good enough" forced you to confront._
+Approve holding the launch while we address the audited failures and incorrect pricing. Return for a ship-or-hold decision in 3 weeks, supported by updated audit results and pricing-gate status.
